@@ -1,0 +1,353 @@
+header {
+  width: 100%;
+  background-color: lightgrey;
+  text-align: center;
+  padding: 2px;
+  height: 250px;
+}
+
+header h1 {
+  font-size: 65px;
+  padding: 1px;
+  margin-top: 50px;
+}
+
+header div {
+  padding: 1px;
+  margin-top: -20px;
+  font-size: 25px;
+}
+
+nav {
+  background-color: #333;
+  width: 100%;
+  height: 48px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+nav ul li {
+  float: left;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li :hover {
+  background-color: #111;
+}
+
+.grid-container {
+  margin-left: 10%;
+  margin-top: 50px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto auto auto;
+      grid-template-columns: auto auto auto;
+}
+
+.grid-container .about-us {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1 / 2;
+}
+
+.grid-container .about-us .about-us-title {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.grid-container .about-us .about-us-description {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.grid-container .about-us .about-us-image {
+  width: 80%;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.grid-container .about-us .about-us-text {
+  width: 80%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid-container .title {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-column: 2 / span 2;
+}
+
+.grid-container .title .title-heading {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title .title-description {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title .title-image {
+  width: 90%;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title .title-text {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.grid-container .links {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.grid-container .links .links-heading {
+  font-size: 30px;
+  margin-bottom: 5px;
+}
+
+.grid-container .links .links-text {
+  width: 80%;
+  margin-bottom: 5px;
+}
+
+.grid-container .links ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 80%;
+  background-color: #f1f1f1;
+}
+
+.grid-container .links ul li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.grid-container .links ul li .active {
+  background-color: cyan;
+}
+
+.grid-container .title-2 {
+  -ms-grid-row: 2;
+  grid-row: 2;
+}
+
+.grid-container .title-2 .title-2-heading {
+  font-size: 35px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title-2 .title-2-description {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title-2 .title-2-image {
+  width: 90%;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.grid-container .title-2 .title-2-text {
+  width: 90%;
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+footer {
+  width: 100%;
+  background-color: lightgrey;
+  text-align: center;
+  height: 100px;
+  padding: 2px;
+}
+
+footer div {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    padding: 2px;
+    height: 200px;
+  }
+  header h1 {
+    font-size: 45px;
+    padding: 1px;
+    margin-top: 30px;
+  }
+  header div {
+    position: relative;
+    padding: 1px;
+    margin-top: -20px;
+    font-size: 15px;
+  }
+  nav {
+    background-color: #333;
+    width: 100%;
+    height: 48px;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+  }
+  nav ul li {
+    float: left;
+  }
+  nav ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  nav ul li :hover {
+    background-color: #111;
+  }
+  .grid-container {
+    margin-left: 10%;
+    margin-top: 50px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto;
+        grid-template-columns: auto;
+  }
+  .grid-container .about-us {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .grid-container .about-us .about-us-title {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .grid-container .about-us .about-us-description {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .grid-container .about-us .about-us-image {
+    width: 80%;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+  .grid-container .about-us .about-us-text {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .grid-container .title {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 2;
+    grid-row: 2;
+  }
+  .grid-container .title .title-heading {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title .title-description {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title .title-image {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title .title-text {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  .grid-container .links {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 3;
+    grid-row: 3;
+  }
+  .grid-container .links .links-heading {
+    font-size: 30px;
+    margin-bottom: 5px;
+  }
+  .grid-container .links .links-text {
+    width: 80%;
+    margin-bottom: 5px;
+  }
+  .grid-container .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    background-color: #f1f1f1;
+    margin-bottom: 55px;
+  }
+  .grid-container .links ul li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  .grid-container .links ul li .active {
+    background-color: cyan;
+  }
+  .grid-container .title-2 {
+    -ms-grid-column: 1;
+    grid-column: 1;
+    -ms-grid-row: 4;
+    grid-row: 4;
+  }
+  .grid-container .title-2 .title-2-heading {
+    font-size: 35px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title-2 .title-2-description {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title-2 .title-2-image {
+    width: 90%;
+    height: 300px;
+    margin-bottom: 5px;
+  }
+  .grid-container .title-2 .title-2-text {
+    width: 90%;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  footer {
+    width: 100%;
+    background-color: lightgrey;
+    text-align: center;
+    height: 100px;
+    padding: 2px;
+  }
+  footer div {
+    margin-top: 35px;
+  }
+}
+/*# sourceMappingURL=index.css.map */

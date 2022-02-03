@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../js/index.js"></script>
+</head>
+
+<body>
+
+    <header class="heading">
+        <h1 id="title">Online Library</h1>
+    </header>
+
+    <section class="body">
+        <div class="buttons">
+            <button class="addBook" onclick="openAddForm()">Add Book</button>
+            <button class="removeBook" onclick="openRemoveForm()">Remove Book</button>
+            <button class="editBook" onclick="openAddForm()">Edit Book</button>
+            <button class="listBook" onclick="openList()">List of All Books</button>
+        </div>
+
+        <div class="open-addForm" id="addForm">
+            <form action="#" id="formSubmission" class="addForm-container">
+                <h1>Add Book</h1>
+
+                <div>Book id: <input id="id" type="text" placeholder="Enter Book id" required></div>
+                <div>Book Name: <input id="name" type="text" placeholder="Enter Book Name" required></div>
+                <div>Book Author: <input id="author" type="text" placeholder="Enter Book Author" required></div>
+                <div>Book Publish Date: <input id="date" type="date" placeholder="Enter Book Publish Date" required></div>
+                <div>Book Price: <input id="price" type="number" placeholder="Enter Book Price" required></div>
+                
+                <button type="submit" id="save">Submit</button>
+            </form>
+        </div>
+
+        <div class="open-addForm" id="removeForm">
+            <form class="addForm-container">
+                <h1>Remove Book</h1>
+
+                <div>Book id: <input type="text" placeholder="Enter Book id" required></div>
+                <div>Book Name: <input type="text" placeholder="Enter Book Name" required></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="open-addForm" id="editForm">
+            <form class="addForm-container">
+                <h1>Edit Book</h1>
+
+                <div>Book id: <input type="text" placeholder="Enter Book id" required></div>
+                <div>Book Name: <input type="text" placeholder="Enter Book Name" required></div>
+                <div>Book Author: <input type="text" placeholder="Enter Book Author" required></div>
+                <div>Book Publish Date: <input type="date" placeholder="Enter Book Publish Date" required></div>
+                <div>Book Price: <input type="number" placeholder="Enter Book Price" required></div>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+
+        <div class="open-addForm" id="bookList">
+            <h1>List of All books</h1>
+            <table id="myTable">
+                <thead>
+                    <tr>
+                       <th>Book Id</th> 
+                       <th>Book Name</th> 
+                       <th>Book Author</th> 
+                       <th>Book Publish Date</th> 
+                       <th>Book Price</th> 
+                    </tr>
+                </thead>
+            </table>
+        </div>
+
+        <div class="article">
+            <h2>Reader's Stop</h2>
+            <p>Reading helps to expand the mind and give us more ideas. Reading has been proven to keep our minds young,
+                healthy and sharp, with studies showing that reading can even help prevent alzheimer's disease. Learning
+                to read is about listening and understanding as well as working out what is printed on the page. Through
+                hearing stories, children are exposed to a wide range of words. This helps them build their own
+                vocabulary and improve their understanding when they listen, which is vital as they start to read.</p>
+        </div>
+
+        <div class="thoughts">
+            <p>Some Thoughts</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>All rights reserve to Reader's Stop.</p>
+    </footer>
+
+
+
+</body>
+
+</html>
